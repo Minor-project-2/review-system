@@ -1,9 +1,9 @@
-import React from 'react'
-import RstLstItem from "./RstLstItem"
+import React from 'react';
+import RstLstItem from "./RstLstItem";
+
 function RstLst() {
     return (
         <div>
-           
 			<div className="container">
 				<div className="row">
 					<div className="page-head">
@@ -16,11 +16,9 @@ function RstLst() {
 						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
 					</div>
 					<RstLstItem />
-                   
 				</div>
 			</div>
-		
-</div>
+		</div>
     )
 }
 

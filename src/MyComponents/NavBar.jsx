@@ -26,15 +26,15 @@ export const NavBar = () => {
                                 <span><i className="fa fa-times hide-menu" aria-hidden="true"></i></span>
                             </div>
                             <ul>
-                                <li><Link to="#!">Home</Link>
+                                <li><Link to="/">Home</Link>
                                 </li>
-                                <li><Link to="#!">Dashboard</Link>
+                                <li><Link to="/rstdetail">Dashboard</Link>
                                 </li>
-                                <li><Link to="#!">About Us</Link>
+                                <li><Link to="/">About Us</Link>
                                 </li>
-                                <li><Link to="#!">Contact Us</Link>
+                                <li><Link to="/">Contact Us</Link>
                                 </li>
-                                <li><Link to="#!">Logout</Link>
+                                <li><Link to="/">Logout</Link>
                                 </li>
                             </ul>
                         </div>
@@ -58,15 +58,15 @@ export const NavBar = () => {
                             </div>
                             <div className="col-lg-5 col-md-6 menu-bar">
                                 <ul>
-                                    <li><Link to="#!">Home</Link>
+                                    <li><Link to="/">Home</Link>
                                     </li>
-                                    <li><Link to="#!">Dashboard</Link>
+                                    <li><Link to="/rstdetail">Dashboard</Link>
                                     </li>
-                                    <li><Link to="#!">About Us</Link>
+                                    <li><Link to="/rstlist">About Us</Link>
                                     </li>
-                                    <li><Link to="#!">Contact Us</Link>
+                                    <li><Link to="/">Contact Us</Link>
                                     </li>
-                                    <li><Link to="#!">Logout</Link>
+                                    <li><Link to="/">Logout</Link>
                                     </li>
                                 </ul>
                             </div>

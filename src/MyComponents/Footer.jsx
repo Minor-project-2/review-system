@@ -10,11 +10,11 @@ export const Footer = () => {
                         <div className="row">
                             <div className="foot-com foot-1">
                                 <ul>
-                                    <li><Link to="#!"><i className="fa fa-facebook" aria-hidden="true"></i></Link>
+                                    <li><Link to="/"><i className="fa fa-facebook" aria-hidden="true"></i></Link>
                                     </li>
-                                    <li><Link to="#!"><i className="fa fa-google-plus" aria-hidden="true"></i></Link>
+                                    <li><Link to="/"><i className="fa fa-google-plus" aria-hidden="true"></i></Link>
                                     </li>
-                                    <li><Link to="#!"><i className="fa fa-twitter" aria-hidden="true"></i></Link>
+                                    <li><Link to="/"><i className="fa fa-twitter" aria-hidden="true"></i></Link>
                                     </li>
                                 </ul>
                             </div>
@@ -22,10 +22,10 @@ export const Footer = () => {
                                 <h5>Phone: (+404) 142 21 23 78</h5> 
                             </div>
                             <div className="foot-com foot-3">
-                                <Link className="waves-effect waves-light" to="booking.html">room reservation</Link> 
+                                <Link className="waves-effect waves-light" to="/">room reservation</Link> 
                             </div>
                             <div className="foot-com foot-4">
-                                <Link to="#!"><img src="images/card.png" alt="" /></Link>
+                                <Link to="/"><img src="images/card.png" alt="" /></Link>
                             </div>
                         </div>
                     </div>
@@ -46,42 +46,42 @@ export const Footer = () => {
                                             <div className="col-sm-12 col-md-3">
                                                 <h4>Support &amp; Help</h4>
                                                 <ul className="two-columns">
-                                                    <li><Link to="dashboard.html">Dashboard</Link>
+                                                    <li><Link to="/">Dashboard</Link>
                                                     </li>
-                                                    <li><Link to="db-activity.html">DB Activity</Link>
+                                                    <li><Link to="/">DB Activity</Link>
                                                     </li>
-                                                    <li><Link to="booking.html">Booking</Link>
+                                                    <li><Link to="/">Booking</Link>
                                                     </li>
-                                                    <li><Link to="contact-us.html">Contact Us</Link>
+                                                    <li><Link to="/">Contact Us</Link>
                                                     </li>
-                                                    <li><Link to="about-us.html">About Us</Link>
+                                                    <li><Link to="/">About Us</Link>
                                                     </li>
-                                                    <li><Link to="aminities.html">Aminities</Link>
+                                                    <li><Link to="/">Aminities</Link>
                                                     </li>
-                                                    <li><Link to="blog.html">Blog</Link>
+                                                    <li><Link to="/">Blog</Link>
                                                     </li>
-                                                    <li><Link to="menu1.html">Food Menu</Link>
+                                                    <li><Link to="/">Food Menu</Link>
                                                     </li>
                                                 </ul>
                                             </div>
                                             <div className="col-sm-12 col-md-3">
                                                 <h4>Popular Services</h4>
                                                 <ul className="two-columns">
-                                                    <li><Link to="all-hotels.html">Our Hotels</Link>
+                                                    <li><Link to="/">Our Hotels</Link>
                                                     </li>
-                                                    <li><Link to="about-us.html">About Us</Link>
+                                                    <li><Link to="/">About Us</Link>
                                                     </li>
-                                                    <li><Link to="contact-us.html">Contact Us</Link>
+                                                    <li><Link to="/">Contact Us</Link>
                                                     </li>
-                                                    <li><Link to="all-rooms.html">Master Suite</Link>
+                                                    <li><Link to="/">Master Suite</Link>
                                                     </li>
-                                                    <li><Link to="all-rooms.html">Mini-Suite</Link>
+                                                    <li><Link to="/">Mini-Suite</Link>
                                                     </li>
-                                                    <li><Link to="all-rooms.html">Ultra Deluxe</Link>
+                                                    <li><Link to="/">Ultra Deluxe</Link>
                                                     </li>
-                                                    <li><Link to="all-rooms.html">Luxury Room</Link>
+                                                    <li><Link to="/">Luxury Room</Link>
                                                     </li>
-                                                    <li><Link to="all-rooms.html">Normal Room</Link>
+                                                    <li><Link to="/">Normal Room</Link>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -115,12 +115,12 @@ export const Footer = () => {
                                                 <h4>Follow with us</h4>
                                                 <p>Join the thousands of other There are many variations of passages of Lorem Ipsum available</p>
                                                 <ul>
-                                                    <li><Link to="#!"><i className="fa fa-facebook" aria-hidden="true"></i></Link> </li>
-                                                    <li><Link to="#!"><i className="fa fa-google-plus" aria-hidden="true"></i></Link> </li>
-                                                    <li><Link to="#!"><i className="fa fa-twitter" aria-hidden="true"></i></Link> </li>
-                                                    <li><Link to="#!"><i className="fa fa-linkedin" aria-hidden="true"></i></Link> </li>
-                                                    <li><Link to="#!"><i className="fa fa-youtube" aria-hidden="true"></i></Link> </li>
-                                                    <li><Link to="#!"><i className="fa fa-whatsapp" aria-hidden="true"></i></Link> </li>
+                                                    <li><Link to="/"><i className="fa fa-facebook" aria-hidden="true"></i></Link> </li>
+                                                    <li><Link to="/"><i className="fa fa-google-plus" aria-hidden="true"></i></Link> </li>
+                                                    <li><Link to="/"><i className="fa fa-twitter" aria-hidden="true"></i></Link> </li>
+                                                    <li><Link to="/"><i className="fa fa-linkedin" aria-hidden="true"></i></Link> </li>
+                                                    <li><Link to="/"><i className="fa fa-youtube" aria-hidden="true"></i></Link> </li>
+                                                    <li><Link to="/"><i className="fa fa-whatsapp" aria-hidden="true"></i></Link> </li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -144,16 +144,16 @@ export const Footer = () => {
                             <p>Don't have an account? Create your account. It's take less then a minutes</p>
                             <h4>Login with social media</h4>
                             <ul>
-                                <li><Link to="#!"><i className="fa fa-facebook"></i> Facebook</Link>
+                                <li><Link to="/"><i className="fa fa-facebook"></i> Facebook</Link>
                                 </li>
-                                <li><Link to="#!"><i className="fa fa-google"></i> Google+</Link>
+                                <li><Link to="/"><i className="fa fa-google"></i> Google+</Link>
                                 </li>
-                                <li><Link to="#!"><i className="fa fa-twitter"></i> Twitter</Link>
+                                <li><Link to="/"><i className="fa fa-twitter"></i> Twitter</Link>
                                 </li>
                             </ul>
                         </div>
                         <div className="log-in-pop-right">
-                            <Link to="#!" className="pop-close" data-dismiss="modal"><img src="images/cancel.png" alt="" />
+                            <Link to="/" className="pop-close" data-dismiss="modal"><img src="images/cancel.png" alt="" />
                             </Link>
                             <h4>Login</h4>
                             <p>Don't have an account? Create your account. It's take less then a minutes</p>
@@ -184,7 +184,7 @@ export const Footer = () => {
                                     </div>
                                 </div>
                                 <div>
-                                    <div className="input-field s12"> <Link to="#!" data-dismiss="modal" data-toggle="modal" data-target="#modal3">Forgot password</Link> | <Link to="#!" data-dismiss="modal" data-toggle="modal" data-target="#modal2">Create a new account</Link> </div>
+                                    <div className="input-field s12"> <Link to="/" data-dismiss="modal" data-toggle="modal" data-target="#modal3">Forgot password</Link> | <Link to="/" data-dismiss="modal" data-toggle="modal" data-target="#modal2">Create a new account</Link> </div>
                                 </div>
                             </form>
                         </div>
@@ -197,16 +197,16 @@ export const Footer = () => {
                             <p>Don't have an account? Create your account. It's take less then a minutes</p>
                             <h4>Login with social media</h4>
                             <ul>
-                                <li><Link to="#!"><i className="fa fa-facebook"></i> Facebook</Link>
+                                <li><Link to="/"><i className="fa fa-facebook"></i> Facebook</Link>
                                 </li>
-                                <li><Link to="#!"><i className="fa fa-google"></i> Google+</Link>
+                                <li><Link to="/"><i className="fa fa-google"></i> Google+</Link>
                                 </li>
-                                <li><Link to="#!"><i className="fa fa-twitter"></i> Twitter</Link>
+                                <li><Link to="/"><i className="fa fa-twitter"></i> Twitter</Link>
                                 </li>
                             </ul>
                         </div>
                         <div className="log-in-pop-right">
-                            <Link to="#!" className="pop-close" data-dismiss="modal"><img src="images/cancel.png" alt="" />
+                            <Link to="/" className="pop-close" data-dismiss="modal"><img src="images/cancel.png" alt="" />
                             </Link>
                             <h4>Create an Account</h4>
                             <p>Don't have an account? Create your account. It's take less then a minutes</p>
@@ -241,7 +241,7 @@ export const Footer = () => {
                                     </div>
                                 </div>
                                 <div>
-                                    <div className="input-field s12"> <Link to="#!" data-dismiss="modal" data-toggle="modal" data-target="#modal1">Are you a already member ? Login</Link> </div>
+                                    <div className="input-field s12"> <Link to="/" data-dismiss="modal" data-toggle="modal" data-target="#modal1">Are you a already member ? Login</Link> </div>
                                 </div>
                             </form>
                         </div>
@@ -254,16 +254,16 @@ export const Footer = () => {
                             <p>Don't have an account? Create your account. It's take less then a minutes</p>
                             <h4>Login with social media</h4>
                             <ul>
-                                <li><Link to="#!"><i className="fa fa-facebook"></i> Facebook</Link>
+                                <li><Link to="/"><i className="fa fa-facebook"></i> Facebook</Link>
                                 </li>
-                                <li><Link to="#!"><i className="fa fa-google"></i> Google+</Link>
+                                <li><Link to="/"><i className="fa fa-google"></i> Google+</Link>
                                 </li>
-                                <li><Link to="#!"><i className="fa fa-twitter"></i> Twitter</Link>
+                                <li><Link to="/"><i className="fa fa-twitter"></i> Twitter</Link>
                                 </li>
                             </ul>
                         </div>
                         <div className="log-in-pop-right">
-                            <Link to="#!" className="pop-close" data-dismiss="modal"><img src="images/cancel.png" alt="" />
+                            <Link to="/" className="pop-close" data-dismiss="modal"><img src="images/cancel.png" alt="" />
                             </Link>
                             <h4>Forgot password</h4>
                             <p>Don't have an account? Create your account. It's take less then a minutes</p>
@@ -280,7 +280,7 @@ export const Footer = () => {
                                     </div>
                                 </div>
                                 <div>
-                                    <div className="input-field s12"> <Link to="#!" data-dismiss="modal" data-toggle="modal" data-target="#modal1">Are you a already member ? Login</Link> | <Link to="#!" data-dismiss="modal" data-toggle="modal" data-target="#modal2">Create a new account</Link> </div>
+                                    <div className="input-field s12"> <Link to="/" data-dismiss="modal" data-toggle="modal" data-target="#modal1">Are you a already member ? Login</Link> | <Link to="/" data-dismiss="modal" data-toggle="modal" data-target="#modal2">Create a new account</Link> </div>
                                 </div>
                             </form>
                         </div>

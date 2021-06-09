@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function RstLstItem() {
     return (
@@ -37,7 +37,6 @@ function RstLstItem() {
                 <div className="r5 r-com r-com-1 r5-1">
                     <p>Price for 1 night</p> <a href="room-details-block.html" className="inn-room-book">Book</a> </div>
             </div>
-
         </div>
     )
 }
