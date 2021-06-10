@@ -1,7 +1,7 @@
-import './App.css';
-import { NavBar } from "./MyComponents/NavBar.jsx";
-import { Banner } from "./MyComponents/Banner.jsx";
-import { Footer } from "./MyComponents/Footer.jsx";
+// import './App.css';
+import NavBar from "./MyComponents/NavBar";
+import Banner from "./MyComponents/Banner";
+import Footer from "./MyComponents/Footer";
 import RstDetail from "./MyComponents/RstDetail";
 import RstList from "./MyComponents/RstLst";
 import {

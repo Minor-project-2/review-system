@@ -147,9 +147,7 @@ th {
 .sp-mar-top-50 {
     margin-top: 50px;
 }
-.wed-logo {
-    /* padding-top: 15px; */
-}
+
 .wed-logo a img {
     width: 130px;
 }
@@ -1368,7 +1366,6 @@ th {
     color: #888;
     font-size: 12px;
 }
-.room-rat-body ul li:nth-child(4) {}
 
 /*-------------------------------------------------*/
 /* =  ROOM SHOCIAL SHARE
@@ -1494,7 +1491,7 @@ th {
     margin-top: 0px;
     margin-bottom: 0px;
 }
-.menu-item {}
+
 
 /*-------------------------------------------------*/
 /* =  ALL HOTELS
@@ -1730,7 +1727,7 @@ th {
     top: 10px;
     color: #727070;
 }
-.log-ch-bx p input {}
+
 
 /*-------------------------------------------------*/
 /* =  MAIN DASHBOARD
@@ -3324,7 +3321,7 @@ a.ui-button:active,
     margin-bottom: 15px;
     letter-spacing: 1px;
 }
-.bot-gal p {}
+
 
 /*-------------------------------------------------------*/
 /*  FOOTER
@@ -3401,9 +3398,7 @@ footer ul li a {
     
     margin-bottom: 5px;
 }
-.foot-subsc li:nth-child(2) {
-    /* width: 25%; */
-}
+
 .foot-social ul {
     padding: 0px;
 }
@@ -3727,11 +3722,11 @@ footer ul li a {
     width: 100%;
     display: block;
 }
-#pro-sub-btn input {} .pro-sub-btn {
+.pro-sub-btn {
     width: 100%;
     display: block;
 }
-.disabled span {}
+
 
 /*-------------------------------------------------------*/
 /*  ROOM AND HOTEL DETAILS
@@ -4019,10 +4014,6 @@ footer ul li a {
     float: left;
     width: 100%;
 }
-.hp-review-left-2 {
-    /* float: left; */
-    /* width: 50%; */
-}
 .hp-review-left-11 {
     float: left;
     width: 50%;
@@ -4118,11 +4109,7 @@ footer ul li a {
 .lp-ur-all-left-1 {
     float: left;
     width: 100%;
-}
-.lp-ur-all-left-2 {
-    /* float: left; */
-    /* width: 50%; */
-}
+} 
 .lp-ur-all-left-11 {
     float: left;
     width: 50%;

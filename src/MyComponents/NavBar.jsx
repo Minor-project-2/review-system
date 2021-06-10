@@ -1,21 +1,20 @@
-import React from 'react'
+import React from 'react';
 import { Link } from "react-router-dom";
 
-export const NavBar = () => {
+function NavBar() {
     return (
         <>
             <section>
                 <div className="mm">
                     <div className="mm-inn">
                         <div className="col-sm-3 col-md-2 mm-logo hidden visible-lg visible-md visible-sm">
-                            <Link to="main.html"><img src="images/logo.png" alt="" /></Link>
+                            <Link to="/"><img src="images/logo.png" alt="" /></Link>
                         </div>
                         <div className="col-sm-7 col-xs-10 col-md-8">
                                 <form role="search">
                                     <div className="form-group pos-top-1">
                                         <input type="text" className="form-control" placeholder="Search" />
                                     </div>
-                                    {/* <button type="submit" className="btn btn-default">Submit</button> */}
                                 </form>
                             </div>
                         <div className="col-sm-2 col-xs-2 col-md-2 mm-icon">
@@ -46,7 +45,7 @@ export const NavBar = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-2 col-md-2 logo">
-                                <Link to="main.html"><img src="images/logo.png" className="pos-top-4" alt="" />
+                                <Link to="/"><img src="images/logo.png" className="pos-top-4" alt="" />
                                 </Link>
                             </div>
                             <div className="col-lg-5 col-md-4">
@@ -75,5 +74,7 @@ export const NavBar = () => {
                 </div>
             </section>
         </>
-    )
+    );
 }
+
+export default NavBar;

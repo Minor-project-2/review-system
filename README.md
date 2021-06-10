@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## To Run This Project
+
+Clone the repository then do following steps:-\
+```sh
+cd review-system
+npm install
+npm install react-router-dom
+npm start
+```
+
 ## Available Scripts
 
 In the project directory, you can run:

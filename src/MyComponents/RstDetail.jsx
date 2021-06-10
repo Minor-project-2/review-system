@@ -46,19 +46,19 @@ function RstDetail() {
 								<div class="hp-over">
 									<ul class="nav nav-tabs hp-over-nav">
 										<li class="">
-											<Link data-toggle="tab" href="#home" aria-expanded="false"><img src="images/icon/a9.png" alt=""/> <span class="tab-hide">Food Menu</span>
+											<Link data-toggle="tab" to="/" aria-expanded="false"><img src="images/icon/a9.png" alt=""/> <span class="tab-hide">Food Menu</span>
 											</Link>
 										</li>
 										<li class="active">
-											<Link data-toggle="tab" href="#menu1" aria-expanded="true"><img src="images/icon/a8.png" alt=""/> <span class="tab-hide">Overview</span>
+											<Link data-toggle="tab" to="/" aria-expanded="true"><img src="images/icon/a8.png" alt=""/> <span class="tab-hide">Overview</span>
 											</Link>
 										</li>
 										<li class="">
-											<Link data-toggle="tab" href="#menu2" aria-expanded="false"><img src="images/icon/a10.png" alt=""/> <span class="tab-hide">Facilities</span>
+											<Link data-toggle="tab" to="/" aria-expanded="false"><img src="images/icon/a10.png" alt=""/> <span class="tab-hide">Facilities</span>
 											</Link>
 										</li>
 										<li class="">
-											<Link data-toggle="tab" href="#menu3" aria-expanded="false"><img src="images/icon/a11.png" alt=""/> <span class="tab-hide">Other Features</span>
+											<Link data-toggle="tab" to="/" aria-expanded="false"><img src="images/icon/a11.png" alt=""/> <span class="tab-hide">Other Features</span>
 											</Link>
 										</li>
 									</ul>
@@ -113,17 +113,17 @@ function RstDetail() {
                     <div className="col-md-4">
                         <div className="hp-call hp-right-com">
                             <div className="hp-call-in"> <img src="images/icon/dbc4.png" alt="" />
-                                <h3><span>Check Availability. Call us!</span> +01 4214 4214</h3> <small>We are available 24/7 Monday to Sunday</small> <Link to="#!">Call Now</Link> </div>
+                                <h3><span>Check Availability. Call us!</span> +01 4214 4214</h3> <small>We are available 24/7 Monday to Sunday</small> <Link to="/">Call Now</Link> </div>
                         </div>
                         <div className="hp-book hp-right-com">
                             <div className="hp-book-in">
                                 <button className="like-button"><i className="fa fa-heart-o"></i> Bookmark this listing</button> <span>159 people bookmarked this place</span>
                                 <ul>
-                                    <li><Link to="#!"><i className="fa fa-facebook"></i> Share</Link>
+                                    <li><Link to="/"><i className="fa fa-facebook"></i> Share</Link>
                                     </li>
-                                    <li><Link to="#!"><i className="fa fa-twitter"></i> Tweet</Link>
+                                    <li><Link to="/"><i className="fa fa-twitter"></i> Tweet</Link>
                                     </li>
-                                    <li><Link to="#!"><i className="fa fa-google-plus"></i> Share</Link>
+                                    <li><Link to="/"><i className="fa fa-google-plus"></i> Share</Link>
                                     </li>
 
                                 </ul>

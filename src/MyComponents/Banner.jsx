@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 import { Link } from "react-router-dom";
 
-export const Banner = () => {
+function Banner () {
     return (
 		<section>
 			<div className="slider fullscreen">
@@ -14,8 +14,8 @@ export const Banner = () => {
 							<p>Mauris non placerat nulla. Sed vestibulum quam mauris, et malesuada tortor venenatis at.
 								Aenean euismod sem porta est consectetur posuere. Praesent nisi velit, porttitor ut imperdiet a, 
 								pellentesque id mi.</p> 
-							<Link to="#!" className="waves-effect waves-light">Booking</Link> 
-							<Link to="#!" className="waves-effect waves-light">Booking</Link> 
+							<Link to="/" className="waves-effect waves-light">Booking</Link> 
+							<Link to="/" className="waves-effect waves-light">Booking</Link> 
 						</div>
 					</li>
 					<li> 
@@ -26,8 +26,8 @@ export const Banner = () => {
 							<p>Mauris non placerat nulla. Sed vestibulum quam mauris, et malesuada tortor venenatis at.
 								Aenean euismod sem porta est consectetur posuere. Praesent nisi velit, porttitor ut imperdiet a, 
 								pellentesque id mi.</p> 
-							<Link to="#!" className="waves-effect waves-light">Booking</Link> 
-							<Link to="#!" className="waves-effect waves-light">Booking</Link> 
+							<Link to="/" className="waves-effect waves-light">Booking</Link> 
+							<Link to="/" className="waves-effect waves-light">Booking</Link> 
 						</div>
 					</li>
 					<li>  
@@ -38,8 +38,8 @@ export const Banner = () => {
 							<p>Mauris non placerat nulla. Sed vestibulum quam mauris, et malesuada tortor venenatis at.
 								Aenean euismod sem porta est consectetur posuere. Praesent nisi velit, porttitor ut imperdiet a, 
 								pellentesque id mi.</p> 
-							<Link to="#!" className="waves-effect waves-light">Booking</Link> 
-							<Link to="#!" className="waves-effect waves-light">Booking</Link> 
+							<Link to="/" className="waves-effect waves-light">Booking</Link> 
+							<Link to="/" className="waves-effect waves-light">Booking</Link> 
 						</div>
 					</li>
 					<li> 
@@ -57,5 +57,7 @@ export const Banner = () => {
 				</ul>
 			</div>
 		</section>
-    )
+    );
 }
+
+export default Banner;
