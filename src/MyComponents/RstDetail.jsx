@@ -42,26 +42,26 @@ function RstDetail(props) {
 								<div class="hp-over">
 									<ul class="nav nav-tabs hp-over-nav">
 										<li class="active">
-											<Link data-toggle="tab" to="/" aria-expanded="false"><img src="images/icon/a9.png" alt=""/> <span class="tab-hide">Food Menu</span>
+											<Link data-toggle="tab" to="#home" aria-expanded="true"><img src="images/icon/a9.png" alt=""/> <span class="tab-hide">Food Menu</span>
 											</Link>
 										</li>
 										<li class="">
-											<Link data-toggle="tab" to="/" aria-expanded="true"><img src="images/icon/a8.png" alt=""/> <span class="tab-hide">Overview</span>
+											<Link data-toggle="tab" to="#menu1" aria-expanded="false"><img src="images/icon/a8.png" alt=""/> <span class="tab-hide">Overview</span>
 											</Link>
 										</li>
 										<li class="">
-											<Link data-toggle="tab" to="/" aria-expanded="false"><img src="images/icon/a10.png" alt=""/> <span class="tab-hide">Facilities</span>
+											<Link data-toggle="tab" to="#menu2" aria-expanded="false"><img src="images/icon/a10.png" alt=""/> <span class="tab-hide">Facilities</span>
 											</Link>
 										</li>
 										<li class="">
-											<Link data-toggle="tab" to="/" aria-expanded="false"><img src="images/icon/a11.png" alt=""/> <span class="tab-hide">Other Features</span>
+											<Link data-toggle="tab" to="#menu3" aria-expanded="false"><img src="images/icon/a11.png" alt=""/> <span class="tab-hide">Other Features</span>
 											</Link>
 										</li>
 									</ul>
 									<div class="tab-content">
                                         <div id="home" className="tab-pane fade tab-space active in">
 										    {props.data.map((food)=>{
-                                                return <FoodMenu data={food}/>
+                                                return <FoodMenu key={food.sno} data={food}/>
                                             })}
                                         </div>
 										<div id="menu1" class="tab-pane fade tab-space">
