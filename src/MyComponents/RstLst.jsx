@@ -19,7 +19,7 @@ function RstLst() {
 				</div>
 			</div>
 		</div>
-    )
+    );
 }
 
 export default RstLst

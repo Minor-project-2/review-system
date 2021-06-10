@@ -50,8 +50,8 @@ function Banner () {
 							<p>Mauris non placerat nulla. Sed vestibulum quam mauris, et malesuada tortor venenatis at.
 								Aenean euismod sem porta est consectetur posuere. Praesent nisi velit, porttitor ut imperdiet a, 
 								pellentesque id mi.</p> 
-							<Link className="waves-effect waves-light">Booking</Link> 
-							<Link className="waves-effect waves-light" >Booking</Link> 
+							<Link to="/" className="waves-effect waves-light">Booking</Link> 
+							<Link to="/" className="waves-effect waves-light">Booking</Link> 
 						</div>
 					</li>
 				</ul>

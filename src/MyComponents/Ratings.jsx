@@ -46,9 +46,8 @@ function Ratings() {
                     <p><span>4.5 <i className="fa fa-star" aria-hidden="true"></i></span> based on 242 reviews</p>
                 </div>
             </div>
-        </div>
-                           
-    )
+        </div>        
+    );
 }
 
 export default Ratings

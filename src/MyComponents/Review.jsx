@@ -10,7 +10,6 @@ function Review() {
             </div>
             <div className="lp-ur-all-rat">
                 <ul>
-
                     <li>
                         <div className="lr-user-wr-img"> <img src="images/users/2.png" alt="" /> </div>
                         <div className="lr-user-wr-con">
@@ -29,11 +28,11 @@ function Review() {
                             </ul>
                         </div>
                     </li>
-                </ul> <Link className="waves-effect waves-light wr-re-btn" href="!#" data-toggle="modal" data-target="#commend"><i className="fa fa-edit"></i> Write Review</Link> </div>
+                </ul> 
+                <Link className="waves-effect waves-light wr-re-btn" to="/" data-toggle="modal" data-target="#commend"><i className="fa fa-edit"></i> Write Review</Link> 
+            </div>
         </div>
-
-
-    )
+    );
 }
 
 export default Review

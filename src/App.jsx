@@ -11,12 +11,33 @@ import {
 } from "react-router-dom";
 
 function App() {
+	let data = [
+		{
+			sno: 1,
+			title: "salted fried chicken 1",
+			desc: "Tomato soup with croutons, small ceasar salad, apple juice",
+			price: "$45"
+		},
+		{
+			sno: 2,
+			title: "salted fried chicken 2",
+			desc: "Tomato soup with croutons, small ceasar salad, apple juice",
+			price: "$45"
+		},
+		{
+			sno: 3,
+			title: "salted fried chicken 3",
+			desc: "Tomato soup with croutons, small ceasar salad, apple juice",
+			price: "$45"
+		}
+	]
+
 	return (
 		<Router>
 			<NavBar />
 			<Switch>
 				<Route path="/rstdetail">
-					<RstDetail /> 
+					<RstDetail data={data}/> 
 				</Route>
 				<Route path="/rstlist">
 					<RstList /> 

@@ -38,7 +38,7 @@ function RstLstItem() {
                     <p>Price for 1 night</p> <a href="room-details-block.html" className="inn-room-book">Book</a> </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default RstLstItem
