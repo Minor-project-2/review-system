@@ -4,11 +4,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## To Run This Project
 
-Clone the repository then do following steps:-\
+**Clone the repository then do following steps:-**
 ```sh
 cd review-system
 npm install
-npm install react-router-dom
 npm start
 ```
 
