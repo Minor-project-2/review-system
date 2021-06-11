@@ -3,7 +3,7 @@ import RstLstItem from "./RstLstItem";
 
 function RstLst() {
     return (
-        <div>
+        <div className="inn-body-section pad-bot-55">
 			<div className="container">
 				<div className="row">
 					<div className="page-head">
@@ -15,11 +15,11 @@ function RstLst() {
 						</div>
 						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
 					</div>
-					<RstLstItem />
+					<RstLstItem/>
 				</div>
 			</div>
 		</div>
     );
 }
 
-export default RstLst
+export default RstLst;

@@ -11,7 +11,11 @@ import {
 } from "react-router-dom";
 
 function App() {
-	let data = [
+	const result = (query) => {
+		console.log(query);
+	};
+
+	const data = [
 		{
 			sno: 1,
 			title: "salted fried chicken 1",
@@ -30,11 +34,11 @@ function App() {
 			desc: "Tomato soup with croutons, small ceasar salad, apple juice",
 			price: "$45"
 		}
-	]
+	];
 
 	return (
 		<Router>
-			<NavBar />
+			<NavBar searchResult={result} />
 			<Switch>
 				<Route path="/rstdetail">
 					<RstDetail data={data}/> 

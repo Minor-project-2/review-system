@@ -50,4 +50,4 @@ function Ratings() {
     );
 }
 
-export default Ratings
+export default Ratings;

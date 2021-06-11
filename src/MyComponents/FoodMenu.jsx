@@ -9,4 +9,4 @@ function FoodMenu(props) {
     );
 }
 
-export default FoodMenu
+export default FoodMenu;

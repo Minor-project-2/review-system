@@ -35,37 +35,37 @@ function RstDetail(props) {
                                     </ul>
                                 </div>
                             </div>
-								<div class="hp-sub-tit">
+								<div className="hp-sub-tit">
 									<h4><span>Overview</span> Room</h4>
 									<p>Aliquam id tempor sem. Cras molestie risus et lobortis congue. Donec id est consectetur, cursus tellus at, mattis lacus.</p>
 								</div>
-								<div class="hp-over">
-									<ul class="nav nav-tabs hp-over-nav">
-										<li class="active">
-											<Link data-toggle="tab" to="#home" aria-expanded="true"><img src="images/icon/a9.png" alt=""/> <span class="tab-hide">Food Menu</span>
+								<div className="hp-over">
+									<ul className="nav nav-tabs hp-over-nav">
+										<li className="active">
+											<Link data-toggle="tab" to="#home" aria-expanded="true"><img src="images/icon/a9.png" alt=""/> <span className="tab-hide">Food Menu</span>
 											</Link>
 										</li>
-										<li class="">
-											<Link data-toggle="tab" to="#menu1" aria-expanded="false"><img src="images/icon/a8.png" alt=""/> <span class="tab-hide">Overview</span>
+										<li className="">
+											<Link data-toggle="tab" to="#menu1" aria-expanded="false"><img src="images/icon/a8.png" alt=""/> <span className="tab-hide">Overview</span>
 											</Link>
 										</li>
-										<li class="">
-											<Link data-toggle="tab" to="#menu2" aria-expanded="false"><img src="images/icon/a10.png" alt=""/> <span class="tab-hide">Facilities</span>
+										<li className="">
+											<Link data-toggle="tab" to="#menu2" aria-expanded="false"><img src="images/icon/a10.png" alt=""/> <span className="tab-hide">Facilities</span>
 											</Link>
 										</li>
-										<li class="">
-											<Link data-toggle="tab" to="#menu3" aria-expanded="false"><img src="images/icon/a11.png" alt=""/> <span class="tab-hide">Other Features</span>
+										<li className="">
+											<Link data-toggle="tab" to="#menu3" aria-expanded="false"><img src="images/icon/a11.png" alt=""/> <span className="tab-hide">Other Features</span>
 											</Link>
 										</li>
 									</ul>
-									<div class="tab-content">
+									<div className="tab-content">
                                         <div id="home" className="tab-pane fade tab-space active in">
 										    {props.data.map((food)=>{
                                                 return <FoodMenu key={food.sno} data={food}/>
                                             })}
                                         </div>
-										<div id="menu1" class="tab-pane fade tab-space">
-											<div class="hp-main-overview">
+										<div id="menu1" className="tab-pane fade tab-space">
+											<div className="hp-main-overview">
 												<ul>
 													<li>Occupancy: <span>Max four Persons</span>
 													</li>
@@ -81,21 +81,21 @@ function RstDetail(props) {
 													</li>
 													<li>Internet Free <span>Yes</span>
 													</li>
-													<li>Gym : <span class="ov-yes">Yes</span>
+													<li>Gym : <span className="ov-yes">Yes</span>
 													</li>
 												</ul>
 											</div>
 										</div>
-                                        <div id="menu2" class="tab-pane fade tab-space">
-											<div class="row">
-												<div class="col-md-6 hp-ov-fac"> <img src="images/hotel/1.jpg" alt=""/> </div>
-												<div class="col-md-6">
+                                        <div id="menu2" className="tab-pane fade tab-space">
+											<div className="row">
+												<div className="col-md-6 hp-ov-fac"> <img src="images/hotel/1.jpg" alt=""/> </div>
+												<div className="col-md-6">
 													<p>Maecenas erat lorem, vulputate sed ex at, vehicula dignissim risus. Nullam non nisi congue elit cursus tempus. Nunc vel ante nec libero semper maximus. Donec cursus sed massa eget commodo. Phasellus semper neque id iaculis malesuada. Nulla efficitur dui vitae orci blandit tempor. Mauris sed venenatis nibh, sed sodales risus.</p>
 													<p>Nam sit amet tortor in elit fermentum consectetur et sit amet eros. Sed varius velit at eros tempor sodales. Fusce at enim at lectus sollicitudin pharetra at in risus. Donec ut semper turpis. Maecenas lobortis ante ut eros scelerisque, at semper augue ullamcorper.</p>
 												</div>
 											</div>
 										</div>
-                                        <div id="menu3" class="tab-pane fade tab-space">
+                                        <div id="menu3" className="tab-pane fade tab-space">
 											<p>Maecenas erat lorem, vulputate sed ex at, vehicula dignissim risus. Nullam non nisi congue elit cursus tempus. Nunc vel ante nec libero semper maximus. Donec cursus sed massa eget commodo. Phasellus semper neque id iaculis malesuada. Nulla efficitur dui vitae orci blandit tempor. Mauris sed venenatis nibh, sed sodales risus.</p>
 											<p>Nam sit amet tortor in elit fermentum consectetur et sit amet eros. Sed varius velit at eros tempor sodales. Fusce at enim at lectus sollicitudin pharetra at in risus. Donec ut semper turpis. Maecenas lobortis ante ut eros scelerisque, at semper augue ullamcorper.</p>
 											<p>Maecenas erat lorem, vulputate sed ex at, vehicula dignissim risus. Nullam non nisi congue elit cursus tempus. Nunc vel ante nec libero semper maximus. Donec cursus sed massa eget commodo. Phasellus semper neque id iaculis malesuada. Nulla efficitur dui vitae orci blandit tempor. Mauris sed venenatis nibh, sed sodales risus.</p>
@@ -139,4 +139,4 @@ function RstDetail(props) {
     );
 }
 
-export default RstDetail
+export default RstDetail;

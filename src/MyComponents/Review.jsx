@@ -35,4 +35,4 @@ function Review() {
     );
 }
 
-export default Review
+export default Review;

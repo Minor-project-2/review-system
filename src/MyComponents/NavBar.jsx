@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 
-function NavBar() {
+function NavBar(props) {
+    const [text, settext] = useState("");
+
+    const Search = (e) => {
+        e.preventDefault();
+        if(!text) {
+            console.log("Nothing to Search!!");
+        } else {
+            console.log(text);
+            props.searchResult(text);
+        }
+    };
     return (
         <>
             <section>
@@ -11,9 +22,9 @@ function NavBar() {
                             <Link to="/"><img src="images/logo.png" alt="" /></Link>
                         </div>
                         <div className="col-sm-7 col-xs-10 col-md-8">
-                                <form role="search">
+                                <form role="search" onSubmit={ Search }>
                                     <div className="form-group pos-top-1">
-                                        <input type="text" className="form-control" placeholder="Search" />
+                                        <input type="text" value={text} onChange={ (e) => {settext(e.target.value)} } className="form-control" placeholder="Search" />
                                     </div>
                                 </form>
                             </div>
@@ -49,9 +60,9 @@ function NavBar() {
                                 </Link>
                             </div>
                             <div className="col-lg-5 col-md-4">
-                                <form className="navbar-form search-bar" role="search">
+                                <form className="navbar-form search-bar" onSubmit={ Search } role="search">
                                     <div className="form-group">
-                                        <input type="search" className="form-control" placeholder="Search" />
+                                        <input type="search" value={text} onChange={ (e) => {settext(e.target.value)} } className="form-control" placeholder="Search" />
                                     </div>
                                 </form>
                             </div>
