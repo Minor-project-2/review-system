@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 function NavBar(props) {
     const [text, settext] = useState("");
-
+    const history = useHistory();
     const Search = (e) => {
         e.preventDefault();
         if(!text) {
             console.log("Nothing to Search!!");
-        } else {
+        } else {            
             console.log(text);
             props.searchResult(text);
+            settext("")
+            history.push('/rstlist')
         }
     };
     return (
