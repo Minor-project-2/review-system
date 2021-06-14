@@ -54,7 +54,7 @@ function RstLstItem({rest}) {
                     <li>{rest.address}</li>
                     <li>Openin Hours: {rest.opening_hours}</li>
                     <li>Call: <a href={"tel: " + rest.contact}>+{rest.contact}</a></li>
-                    <Link to="/" className="btn btn-custom" >Detail</Link>
+                    <Link to={`/rstdetail/${rest.id}`} className="btn btn-custom" >Detail</Link>
                 </ul>
             </div>
         </div>

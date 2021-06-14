@@ -39,15 +39,14 @@ function App() {
 		<Router>
 			<NavBar query={searchQuery} setQuery={setSearchQuery} />
 			<Switch>
-				<Route path="/rstdetail">
-					<RstDetail data={data}/> 
-				</Route>
-				<Route path="/rstlist">
-					<RstList query={searchQuery} /> 
-				</Route>
-				<Route path="/">
+				<Route exact path="/">
 					<Banner />
 				</Route>
+				<Route exact path="/rstlist">
+					<RstList query={searchQuery} /> 
+				</Route>
+				<Route exact path="/rstdetail/:id" children={<RstDetail data={data}/> } />
+					
 			</Switch>
 			<Footer />
 		</Router>

@@ -9,16 +9,17 @@ function RstLst({query}) {
 
 	const fetchRestaurants = async()=>{
 		const response = db.collection("restaurants");
-		const data = await response.get();
-		data.docs.forEach(doc=>{
-			setRestaurants([...restaurants, {id: doc.id, ...doc.data()}]);
-			console.log(doc.data());
+		const data = await response.limit(5).get();
+		const newData = data.docs.map(doc=>{
+			return{id: doc.id, ...doc.data()};
+			console.log(doc)			
 		});
+		setRestaurants(newData)
 		// console.log(restaurants);
 	};
 	useEffect(() => {
-		const unsubscribe = fetchRestaurants();
-		return ()=>{unsubscribe()}
+		fetchRestaurants();
+		// return ()=>{unsubscribe()}
 		
 	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
@@ -35,10 +36,7 @@ function RstLst({query}) {
 						</div>
 						<p>{query}</p>
 					</div>
-					{restaurants && restaurants.map(restaurant => {
-						return <RstLstItem key={restaurant.id} rest={restaurant}/>
-
-					})}
+					{restaurants.length ? restaurants.map(restaurant => <RstLstItem key={restaurant.id} rest={restaurant} />): "no restaurants"}
 				</div>
 			</div>
 		</div>

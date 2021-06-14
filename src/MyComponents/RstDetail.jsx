@@ -1,10 +1,34 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Review from './Review';
 import FoodMenu from './FoodMenu';
 import Ratings from './Ratings';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import firebase from "../firebase"
 
 function RstDetail(props) {
+    let {id} = useParams()    
+    console.log(id)
+
+	const db = firebase.firestore()
+	const [restaurant, setRestaurant] = useState([])
+
+	const fetchRestaurant = async()=>{
+		const response = db.collection("restaurants").doc(id);
+		const data = await response.get();
+        console.log(data.data())
+		// data.docs.forEach(doc=>{
+		// 	setRestaurant([...restaurant, {id: doc.id, ...doc.data()}]);
+		// 	console.log(doc.data());
+		// });
+		// console.log(restaurants);
+	};
+	useEffect(() => {
+		fetchRestaurant();
+		// return ()=>{unsubscribe()}
+		
+	// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, []);
+    
     return (
         <div>
             <div className="hp-banner">
