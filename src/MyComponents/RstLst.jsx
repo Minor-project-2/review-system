@@ -9,7 +9,7 @@ function RstLst({query}) {
 
 	const fetchRestaurants = async()=>{
 		const response = db.collection("restaurants");
-		const data = await response.limit(5).get();
+		const data = await response.limit(6).get();
 		const newData = data.docs.map(doc=>{
 			return{id: doc.id, ...doc.data()};		
 		});
@@ -18,9 +18,6 @@ function RstLst({query}) {
 	};
 	useEffect(() => {
 		fetchRestaurants();
-		// return ()=>{unsubscribe()}
-		
-	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 	return (
         <div className="inn-body-section pad-bot-55">

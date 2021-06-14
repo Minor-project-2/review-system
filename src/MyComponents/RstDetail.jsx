@@ -11,22 +11,34 @@ function RstDetail(props) {
 
 	const db = firebase.firestore()
 	const [restaurant, setRestaurant] = useState([])
+    const [menu, setMenu] = useState([])
 
-	const fetchRestaurant = async()=>{
-		const response = db.collection("restaurants").doc(id);
-		const data = await response.get();
-        console.log(data.data())
-		// data.docs.forEach(doc=>{
-		// 	setRestaurant([...restaurant, {id: doc.id, ...doc.data()}]);
-		// 	console.log(doc.data());
-		// });
-		// console.log(restaurants);
+    const fetchRestaurant = async()=>{
+        // fetching individual restaurant data
+		const rstQuery = db.collection("restaurants").doc(id);
+		const rstResponse = await rstQuery.get();
+        const rstData = rstResponse.data()
+		setRestaurant(rstData)
+		console.log(rstData);
+		
+        // fetching restaurants menu
+        const menuQuery = db.collection("restaurants").doc(id).collection("menu").limit(15);
+        const menuResponse = await menuQuery.get();
+        const menuData = menuResponse.docs.map(doc=>doc.data());
+        setMenu(menuData);
+        console.log(menuData);
+		
+        // fetching restaurants reviews
+        const revQuery = db.collection("reviews").where("res_id", "==", id).limit(5);
+        // const revQuery = db.collection("reviews").where("rating", "==", 4);
+        const revResponse = await  revQuery.get();
+        const revData = revResponse.docs.map(doc=>doc.data());
+        console.log(revData)
+
+
 	};
 	useEffect(() => {
 		fetchRestaurant();
-		// return ()=>{unsubscribe()}
-		
-	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
     
     return (
