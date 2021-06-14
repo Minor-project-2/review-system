@@ -12,6 +12,7 @@ function RstDetail(props) {
 	const db = firebase.firestore()
 	const [restaurant, setRestaurant] = useState([])
     const [menu, setMenu] = useState([])
+    const [revies, setRevies] = useState([])
 
     const fetchRestaurant = async()=>{
         // fetching individual restaurant data
@@ -33,6 +34,7 @@ function RstDetail(props) {
         // const revQuery = db.collection("reviews").where("rating", "==", 4);
         const revResponse = await  revQuery.get();
         const revData = revResponse.docs.map(doc=>doc.data());
+        setRevies(revData);
         console.log(revData)
 
 
