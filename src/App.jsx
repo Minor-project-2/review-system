@@ -13,7 +13,7 @@ import { useState } from 'react'
 
 function App() {
 	const [searchQuery, setSearchQuery] = useState('')
-
+	const [user, setUser] = useState({})
 	const data = [
 		{
 			sno: 1,
@@ -37,7 +37,7 @@ function App() {
 
 	return (
 		<Router>
-			<NavBar query={searchQuery} setQuery={setSearchQuery} />
+			<NavBar query={searchQuery} setQuery={setSearchQuery} user={user} setUser={setUser}/>
 			<Switch>
 				<Route exact path="/">
 					<Banner />

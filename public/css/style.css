@@ -1625,13 +1625,13 @@ th {
     /* bottom: 0px; */
     
     background: #fff;
-    width: 60%;
+    width: 25%;
     margin: 0 auto;
     margin-top: 5%;
 }
 .log-in-pop-left {
-    float: left;
-    width: 40%;
+    /* float: left;
+    width: 40%; */
     background: url('../images/login.jpg') no-repeat center center;
     padding: 11% 6%;
     color: #fff;
