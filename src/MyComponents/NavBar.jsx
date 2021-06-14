@@ -27,9 +27,9 @@ function NavBar({query, setQuery}) {
                             <Link to="/"><img src="images/logo.png" alt="" /></Link>
                         </div>
                         <div className="col-sm-7 col-xs-10 col-md-8">
-                                <form role="search" onSubmit={ Search }>
+                                <form role="search" className="search-bar" onSubmit={ Search }>
                                     <div className="form-group pos-top-1">
-                                        <input type="text" value={text} onChange={ (e) => {setText(e.target.value)} } className="form-control" placeholder="Search" />
+                                        <input type="search" value={text} onChange={ (e) => {setText(e.target.value)} } className="form-control" />
                                     </div>
                                 </form>
                             </div>

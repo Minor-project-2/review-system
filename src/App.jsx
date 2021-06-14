@@ -12,10 +12,6 @@ import {
 import { useState } from 'react'
 
 function App() {
-	const result = (query) => {
-		console.log(query);
-	};
-
 	const [searchQuery, setSearchQuery] = useState('')
 
 	const data = [

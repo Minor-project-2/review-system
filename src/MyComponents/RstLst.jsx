@@ -9,18 +9,19 @@ function RstLst({query}) {
 
 	const fetchRestaurants = async()=>{
 		const response = db.collection("restaurants");
-		const data = await response.get()
+		const data = await response.get();
 		data.docs.forEach(doc=>{
-			setRestaurants([...restaurants, {id: doc.id, ...doc.data()}])
-			console.log( doc.id)
-		})
-		console.log(restaurants)
-	}
+			setRestaurants([...restaurants, {id: doc.id, ...doc.data()}]);
+			console.log(doc.data());
+		});
+		// console.log(restaurants);
+	};
 	useEffect(() => {
 		const unsubscribe = fetchRestaurants();
 		return ()=>{unsubscribe()}
 		
-	}, [])
+	// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, []);
 	return (
         <div className="inn-body-section pad-bot-55">
 			<div className="container">
@@ -35,7 +36,7 @@ function RstLst({query}) {
 						<p>{query}</p>
 					</div>
 					{restaurants && restaurants.map(restaurant => {
-						return <RstLstItem key={restaurant.id} name={restaurant.name}/>
+						return <RstLstItem key={restaurant.id} rest={restaurant}/>
 
 					})}
 				</div>

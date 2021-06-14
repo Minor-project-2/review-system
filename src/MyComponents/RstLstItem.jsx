@@ -1,46 +1,61 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
-function RstLstItem({name}) {
+function RstLstItem({rest}) {
+    const avg_rating = rest.avg_rating;
+
+    const stars = (point) => {
+        let star = [], temp = point % 1;
+        point -= temp;
+        let decimal = temp && true;
+        for (let i = 1; i <= 5; i++) {
+            if (i <= point){
+                star.push(<i key={i} className="fa fa-star"></i>);
+
+            } else if (decimal){
+                star.push(<i key={i} className="fa fa-star-half-alt"></i>);
+                decimal = false;
+            } else {
+                star.push(<i key={i} className="fa fa-star-o"></i>);
+            }
+        }
+        return star;
+    };
+
+    const rating = (rate) => {
+        // eslint-disable-next-line default-case
+        switch (true) {
+            case (rate <= 2):
+                return 'Below Average';
+            case (rate > 1 && rate <= 3):
+                return 'Average';
+            case (rate > 1 && rate <= 4):
+                return 'good';
+            case (rate > 1 && rate <= 5):
+                return 'Excellent';
+        }
+    };
+    
     return (
-        <div className="room">
-            <div className="ribbon ribbon-top-left"><span>Featured</span>
+        <div className="room col-sm-6 col-md-6 col-lg-6">
+            <div className="r1 r-com col-sm-6 col-md-6 col-lg-6">
+                <img src={rest.image_url} alt="error" />
             </div>
-            <div className="r1 r-com"><img src="images/room/1.jpg" alt="" />
-            </div>
-            <div className="r2 r-com">
-                <h4>{name}</h4>
+            <div className="col-lg-6">
+                <h4 style={{textTransform: "capitalize"}}>{rest.name}</h4>
                 <div className="r2-ratt"> 
-                    <i className="fa fa-star"></i> 
-                    <i className="fa fa-star"></i> 
-                    <i className="fa fa-star"></i> 
-                    <i className="fa fa-star"></i> 
-                    <i className="fa fa-star"></i> 
+                    {stars(avg_rating)}
+                    &nbsp;
                     <img src="images/h-trip.png" alt="" /> 
-                    <span>Excellent  4.5 / 5</span> 
+                    <span>{rating(avg_rating)} {avg_rating} / 5</span>
                 </div>
                 <ul>
-                    <li>Max Adult : 3</li>
-                    <li>Max Child : 1</li>
+                    <li>{rest.cuisine_type}</li>
+                    <li>{rest.address}</li>
+                    <li>Openin Hours: {rest.opening_hours}</li>
+                    <li>Call: <a href={"tel: " + rest.contact}>+{rest.contact}</a></li>
+                    <Link to="/" className="btn btn-custom" >Detail</Link>
                 </ul>
-            </div>
-            <div className="r3 r-com">
-                <ul>
-                    <li>Ironing facilities</li>
-                    <li>Tea/Coffee maker</li>
-                    <li>Air conditioning</li>
-                    <li>Flat-screen TV</li>
-                    <li>Wake-up service</li>
-                </ul>
-            </div>
-            <div className="r4 r-com">
-                <p>Price for 1 night</p>
-                <p><span className="room-price-1">5000</span> <span className="room-price">$: 7000</span>
-                </p>
-                <p>Non Refundable</p>
-            </div>
-            <div className="r5 r-com">
-                <div className="r2-available">Available</div>
-                <p>Price for 1 night</p> <a href="room-details-block.html" className="inn-room-book">Book</a> 
             </div>
         </div>
     );

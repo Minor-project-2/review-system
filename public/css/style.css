@@ -239,9 +239,34 @@ th {
     color: white;
     letter-spacing: 1px;
 }
+.btn-custom{
+    margin-top: 15px;
+    height: 35px;
+    width: 100px;
+    background: #f4364f;
+    padding: 7px 25px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 2px;
+    font-size: 14px;
+}
 @media (max-width:1200px) {
     .search-bar input[type='search'] {
         width: 150%;
+    }
+}
+@media (max-width:992px) {
+    .search-bar input[type='search'] {
+        width: 100%;
+        min-height: 30px
+    }
+}
+@media (max-width:330px) {
+    .search-bar input[type='search'] {
+        width: 90%;
+        min-height: 30px
     }
 }
 .menu-bar {
