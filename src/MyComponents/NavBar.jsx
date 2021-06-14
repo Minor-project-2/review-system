@@ -1,17 +1,20 @@
 import React, { useState } from 'react';
 import { Link, useHistory } from "react-router-dom";
 
-function NavBar(props) {
-    const [text, settext] = useState("");
+function NavBar({query, setQuery}) {
+    const [text, setText] = useState("");
+    
     const history = useHistory();
+    
     const Search = (e) => {
         e.preventDefault();
         if(!text) {
             console.log("Nothing to Search!!");
         } else {            
             console.log(text);
-            props.searchResult(text);
-            settext("")
+            // props.searchResult(text);
+            setQuery(text);
+            setText("");
             history.push('/rstlist')
         }
     };
@@ -26,7 +29,7 @@ function NavBar(props) {
                         <div className="col-sm-7 col-xs-10 col-md-8">
                                 <form role="search" onSubmit={ Search }>
                                     <div className="form-group pos-top-1">
-                                        <input type="text" value={text} onChange={ (e) => {settext(e.target.value)} } className="form-control" placeholder="Search" />
+                                        <input type="text" value={text} onChange={ (e) => {setText(e.target.value)} } className="form-control" placeholder="Search" />
                                     </div>
                                 </form>
                             </div>
@@ -64,7 +67,7 @@ function NavBar(props) {
                             <div className="col-lg-5 col-md-4">
                                 <form className="navbar-form search-bar" onSubmit={ Search } role="search">
                                     <div className="form-group">
-                                        <input type="search" value={text} onChange={ (e) => {settext(e.target.value)} } className="form-control" placeholder="Search" />
+                                        <input type="search" value={text} onChange={ (e) => {setText(e.target.value)} } className="form-control" placeholder="Search" />
                                     </div>
                                 </form>
                             </div>

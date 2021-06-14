@@ -1,6 +1,6 @@
 import React from 'react';
 
-function RstLstItem() {
+function RstLstItem({name}) {
     return (
         <div className="room">
             <div className="ribbon ribbon-top-left"><span>Featured</span>
@@ -8,7 +8,7 @@ function RstLstItem() {
             <div className="r1 r-com"><img src="images/room/1.jpg" alt="" />
             </div>
             <div className="r2 r-com">
-                <h4>Master Suite</h4>
+                <h4>{name}</h4>
                 <div className="r2-ratt"> 
                     <i className="fa fa-star"></i> 
                     <i className="fa fa-star"></i> 

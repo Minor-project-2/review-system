@@ -9,11 +9,14 @@ import {
 	Switch,
 	Route
 } from "react-router-dom";
+import { useState } from 'react'
 
 function App() {
 	const result = (query) => {
 		console.log(query);
 	};
+
+	const [searchQuery, setSearchQuery] = useState('')
 
 	const data = [
 		{
@@ -38,13 +41,13 @@ function App() {
 
 	return (
 		<Router>
-			<NavBar searchResult={result} />
+			<NavBar query={searchQuery} setQuery={setSearchQuery} />
 			<Switch>
 				<Route path="/rstdetail">
 					<RstDetail data={data}/> 
 				</Route>
 				<Route path="/rstlist">
-					<RstList /> 
+					<RstList query={searchQuery} /> 
 				</Route>
 				<Route path="/">
 					<Banner />
