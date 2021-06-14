@@ -37,7 +37,7 @@ function RstLstItem({rest}) {
     };
     
     return (
-        <div className="room col-sm-6 col-md-6 col-lg-6">
+        <div className="room col-sm-6 col-md-6 col-lg-6" style = {{minHeight: "370px"}} >
             <div className="r1 r-com col-sm-6 col-md-6 col-lg-6">
                 <img src={rest.image_url} alt="error" />
             </div>

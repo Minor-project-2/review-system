@@ -11,8 +11,7 @@ function RstLst({query}) {
 		const response = db.collection("restaurants");
 		const data = await response.limit(5).get();
 		const newData = data.docs.map(doc=>{
-			return{id: doc.id, ...doc.data()};
-			console.log(doc)			
+			return{id: doc.id, ...doc.data()};		
 		});
 		setRestaurants(newData)
 		// console.log(restaurants);
