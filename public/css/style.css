@@ -233,6 +233,13 @@ th {
     position: relative;
     top:32px;
 }
+.dropdown-menu li{
+    width: 100%;
+    background: #2a2b33;
+}
+.circular-img{
+    border-radius: 50%;
+}
 .search-bar input[type='search'] {
     width: 220%;
     min-height: 40px;

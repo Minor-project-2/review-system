@@ -4,6 +4,7 @@ import Banner from "./MyComponents/Banner";
 import Footer from "./MyComponents/Footer";
 import RstDetail from "./MyComponents/RstDetail";
 import RstList from "./MyComponents/RstLst";
+import AboutUs from "./MyComponents/AboutUs";
 import {
   	BrowserRouter as Router,
 	Switch,
@@ -46,7 +47,9 @@ function App() {
 					<RstList query={searchQuery} /> 
 				</Route>
 				<Route exact path="/rstdetail/:id" children={<RstDetail data={data}/> } />
-					
+				<Route exact path="/about">
+					<AboutUs />
+				</Route>
 			</Switch>
 			<Footer />
 		</Router>

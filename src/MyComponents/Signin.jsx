@@ -1,6 +1,7 @@
 import React from "react";
 import firebase, {auth} from "../firebase";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const login = () => {
   const provider = new firebase.auth.GoogleAuthProvider();
@@ -26,23 +27,19 @@ function Signin({ setUser }) {
     <div id="modal1" className="modal fade in" role="dialog">
       <div className="log-in-pop">
         <div className="log-in-pop-left">
-          <a href="#" className="pop-close" data-dismiss="modal">
+          <Link to="#" className="pop-close" data-dismiss="modal">
             <img src="images/cancel.png" alt="" />
-          </a>
+          </Link>
           <h1>
             Hello... <span className="ng-binding"></span>
           </h1>
           <h4>Login/Register with social media</h4>
           <ul>
-            <li>
-              <a href="#">
-                <i className="fa fa-facebook"></i> Facebook
-              </a>
-            </li>
-            <li>
-              <a onClick={login} data-dismiss="modal">
+            <li></li>
+            <li className="">
+              <Link onClick={login} data-dismiss="modal">
                 <i className="fa fa-google"></i> Google
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
