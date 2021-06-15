@@ -1,8 +1,7 @@
 import React from 'react';
-import ReviewForm from './ReviewForm'
 
 
-function Ratings() {
+function Ratings({avg_rating, rev_cnt}) {
     return (
         <div className="hp-section">
             <div className="hp-sub-tit">
@@ -16,7 +15,7 @@ function Ratings() {
                 </div>
                 <div className="hp-review-right">
                     <h5>Overall Ratings</h5>
-                    <p><span>4.5 <i className="fa fa-star" aria-hidden="true"></i></span> based on 242 reviews</p>
+                    <p><span>{avg_rating} <i className="fa fa-star" aria-hidden="true"></i></span> based on {rev_cnt} reviews</p>
                 </div>
             </div>
         </div>        

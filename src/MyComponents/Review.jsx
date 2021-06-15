@@ -1,7 +1,28 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
+import {db} from '../firebase'
+import ReviewItem from './ReviewItem'
 
-function Review() {
+function Review({res_id}) {    
+
+    const [reviews, setReviews] = useState([])
+
+    const fetchRestaurant = async()=>{   	
+		
+        // fetching restaurants reviews
+        const revQuery = db.collection("reviews").where("res_id", "==", res_id).limit(5);
+        // const revQuery = db.collection("reviews").where("rating", "==", 4);
+        const revResponse = await  revQuery.get();
+        const revData = revResponse.docs.map(doc=>{
+            return {id: doc.id, ...doc.data()}
+        });
+        setReviews(revData);
+        console.log(revData)
+
+	};
+	useEffect(() => {
+		fetchRestaurant();
+	}, []);
     return (
         <div className="hp-section">
             <div className="hp-sub-tit">
@@ -10,24 +31,10 @@ function Review() {
             </div>
             <div className="lp-ur-all-rat">
                 <ul>
-                    <li>
-                        <div className="lr-user-wr-img"> <img src="images/users/2.png" alt="" /> </div>
-                        <div className="lr-user-wr-con">
-                            <h6>Jacob Michael <span>4.5 <i className="fa fa-star" aria-hidden="true"></i></span></h6> <span className="lr-revi-date">19th January, 2017</span>
-                            <p>Good service... nice and clean rooms... very good spread of buffet and friendly staffs. Located in heart of city and easy to reach any places in a short distance. </p>
-                            <ul>
-                                <li><Link to="/"><span>Like</span><i className="fa fa-thumbs-o-up" aria-hidden="true"></i></Link> </li>
-                                <li><Link to="/"><span>Dis-Like</span><i className="fa fa-thumbs-o-down" aria-hidden="true"></i></Link> </li>
-                                <li><Link to="/"><span>Report</span> <i className="fa fa-flag-o" aria-hidden="true"></i></Link> </li>
-                                <li><Link to="/"><span>Comments</span> <i className="fa fa-commenting-o" aria-hidden="true"></i></Link> </li>
-                                <li><Link to="/"><span>Share Now</span>  <i className="fa fa-facebook" aria-hidden="true"></i></Link> </li>
-                                <li><Link to="/"><i className="fa fa-google-plus" aria-hidden="true"></i></Link> </li>
-                                <li><Link to="/"><i className="fa fa-twitter" aria-hidden="true"></i></Link> </li>
-                                <li><Link to="/"><i className="fa fa-linkedin" aria-hidden="true"></i></Link> </li>
-                                <li><Link to="/"><i className="fa fa-youtube" aria-hidden="true"></i></Link> </li>
-                            </ul>
-                        </div>
-                    </li>
+                    {
+                        reviews && reviews.map(review=> <ReviewItem key={review.id} review={review} /> )
+                    }
+                    
                 </ul> 
                 <Link className="waves-effect waves-light wr-re-btn" to="#" data-toggle="modal" data-target="#commend"><i className="fa fa-edit"></i> Write Review</Link> 
             </div>

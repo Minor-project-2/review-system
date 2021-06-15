@@ -7,7 +7,6 @@ import firebase from "../firebase"
 
 function RstDetail(props) {
     let {id} = useParams()    
-    console.log(id)
 
 	const db = firebase.firestore()
 	const [restaurant, setRestaurant] = useState([])
@@ -25,19 +24,12 @@ function RstDetail(props) {
         // fetching restaurants menu
         const menuQuery = db.collection("restaurants").doc(id).collection("menu").limit(15);
         const menuResponse = await menuQuery.get();
-        const menuData = menuResponse.docs.map(doc=>doc.data());
+        const menuData = menuResponse.docs.map(doc=>{
+            return { id: doc.id, ...doc.data()};
+        });
         setMenu(menuData);
         console.log(menuData);
-		
-        // fetching restaurants reviews
-        const revQuery = db.collection("reviews").where("res_id", "==", id).limit(5);
-        // const revQuery = db.collection("reviews").where("rating", "==", 4);
-        const revResponse = await  revQuery.get();
-        const revData = revResponse.docs.map(doc=>doc.data());
-        setRevies(revData);
-        console.log(revData)
-
-
+		   
 	};
 	useEffect(() => {
 		fetchRestaurant();
@@ -46,15 +38,16 @@ function RstDetail(props) {
     return (
         <div>
             <div className="hp-banner">
-                <img src="images/detailed-banner.jpg" alt="" />
+                <img src={`${restaurant.image_url}`} alt="" />
             </div>
+        <div className="hom-com">
             <div className="container">
                 <div className="row">
                     <div className="col-md-8">
                         <div className="row">
                             <div className="hp-section">
                                 <div className="hp-sub-tit">
-                                    <h4><span>Master Suite</span> Room</h4>
+                                    <h4><span>{restaurant.name}</span></h4>
                                     <p>Aliquam id tempor sem. Cras molestie risus et lobortis congue. Donec id est consectetur, cursus tellus at, mattis lacus.</p>
                                 </div>
                                 <div className="hp-amini">
@@ -98,8 +91,8 @@ function RstDetail(props) {
 									</ul>
 									<div className="tab-content">
                                         <div id="home" className="tab-pane fade tab-space active in">
-										    {props.data.map((food)=>{
-                                                return <FoodMenu key={food.sno} data={food}/>
+										    {menu.map((menuItem)=>{
+                                                return <FoodMenu key={menuItem.id} data={menuItem}/>
                                             })}
                                         </div>
 										<div id="menu1" className="tab-pane fade tab-space">
@@ -141,8 +134,8 @@ function RstDetail(props) {
 										</div>
 									</div>
 								</div>
-                            <Ratings />
-                            <Review />
+                            <Ratings avg_rating={restaurant.avg_rating} rev_cnt={restaurant.review_counter}/>
+                            <Review res_id={id} />
                         </div>
                     </div>
                     <div className="col-md-4">
@@ -173,6 +166,7 @@ function RstDetail(props) {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 }
