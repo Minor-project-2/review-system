@@ -233,11 +233,11 @@ th {
     position: relative;
     top:32px;
 }
-.dropdown-menu li{
+.dropdown-menu li {
     width: 100%;
     background: #2a2b33;
 }
-.circular-img{
+.circular-img {
     border-radius: 50%;
 }
 .search-bar input[type='search'] {
@@ -246,13 +246,13 @@ th {
     color: white;
     letter-spacing: 1px;
 }
-.bg-footer{
+.bg-footer {
     background: #2a2b33;
 }
-.text-white, .hasimg{
+.text-white, .hasimg {
     color: #fff !important;
 }
-.btn-custom{
+.btn-custom {
     margin-top: 15px;
     height: 35px;
     width: 100px;
@@ -4008,6 +4008,10 @@ footer ul li a {
 }
 .tab-space {
     padding: 30px 0px;
+}
+.hp-banner {
+    max-height: 500px;
+    overflow-y: hidden;
 }
 .hp-banner img {
     width: 100%;

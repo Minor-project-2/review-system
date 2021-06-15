@@ -31,12 +31,9 @@ function Review({res_id}) {
             </div>
             <div className="lp-ur-all-rat">
                 <ul>
-                    {
-                        reviews && reviews.map(review=> <ReviewItem key={review.id} review={review} /> )
-                    }
-                    
+                    <Link className="waves-effect waves-light wr-re-btn" to="#" data-toggle="modal" data-target="#commend"><i className="fa fa-edit"></i> Write Review</Link> 
+                    {reviews && reviews.map(review=> <ReviewItem key={review.id} review={review} /> )}
                 </ul> 
-                <Link className="waves-effect waves-light wr-re-btn" to="#" data-toggle="modal" data-target="#commend"><i className="fa fa-edit"></i> Write Review</Link> 
             </div>
         </div>
     );

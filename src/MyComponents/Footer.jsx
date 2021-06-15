@@ -10,26 +10,24 @@ function Footer() {
                         <div className="row">
                             <div className="foot-com foot-1">
                                 <ul>
-                                    <li><Link to="/"><i className="fa fa-facebook" aria-hidden="true"></i></Link>
+                                    <li><Link to="/"><i className="fa fa-facebook" aria-hidden="true"></i>&nbsp;</Link>
                                     </li>
-                                    <li><Link to="/"><i className="fa fa-google-plus" aria-hidden="true"></i></Link>
+                                    <li><Link to="/"><i className="fa fa-google-plus" aria-hidden="true"></i>&nbsp;</Link>
                                     </li>
                                     <li><Link to="/"><i className="fa fa-twitter" aria-hidden="true"></i></Link>
                                     </li>
                                 </ul>
                             </div>
                             <div className="foot-com foot-2">
-                                <h5><a href="tel: +91 8839483954">+91-8839483954</a></h5> 
+                                <a href="tel: +91 8839483954"><h5>(+91) - 8839483954</h5></a>
                             </div>
                             <div className="foot-com foot-3">
                                 <Link className="waves-effect waves-light" to="/">room reservation</Link> 
                             </div>
-                            
                         </div>
                     </div>
                 </div>
             </section>
-
             <footer className="bg-footer site-footer clearfix">
                 <div className="sidebar-container">
                     <div className="sidebar-inner">
@@ -43,61 +41,57 @@ function Footer() {
                                                 <p className="hasimg">The top-rated restaurants, Review.</p>
                                             </div>
                                             <div className="col-sm-12 col-md-3">
-                                                <h4>Support &amp; Help</h4>
+                                                <h4 className="text-white">Support &amp; Help</h4>
                                                 <ul className="two-columns">
-                                                    <li><Link to="/">Dashboard</Link>
+                                                    <li><Link to="/" className="text-white">Dashboard</Link>
                                                     </li>
                         
-                                                    <li><Link to="/">Ratings</Link>
+                                                    <li><Link to="/" className="text-white">Ratings</Link>
                                                     </li>
-                                                    <li><Link to="/">Contact Us</Link>
+                                                    <li><Link to="/" className="text-white">Contact Us</Link>
                                                     </li>
-                                                    <li><Link to="/">About Us</Link>
+                                                    <li><Link to="/" className="text-white">About Us</Link>
                                                     </li>
-                                                    
-                                                    <li><Link to="/">Pictures</Link>
+                                                    <li><Link to="/" className="text-white">Pictures</Link>
                                                     </li>
-                                                   
                                                 </ul>
                                             </div>
                                             <div className="col-sm-12 col-md-3">
-                                                <h4>Popular Services</h4>
+                                                <h4 className="text-white">Popular Services</h4>
                                                 <ul className="two-columns">
-                                                    
-                                                    <li><Link to="/">About Us</Link>
+                                                    <li><Link to="/" className="text-white">About Us</Link>
                                                     </li>
-                                                    <li><Link to="/">Contact Us</Link>
+                                                    <li><Link to="/" className="text-white">Contact Us</Link>
                                                     </li>
-                                                    <li><Link to="/">Cuisine type</Link></li>
-                                                   
-                                                    <li><Link to="/">Restaurant</Link>
+                                                    <li><Link to="/" className="text-white">Cuisine type</Link>
                                                     </li>
-                                                    <li><Link to="/">Location</Link>
+                                                    <li><Link to="/" className="text-white">Restaurant</Link>
+                                                    </li>
+                                                    <li><Link to="/" className="text-white">Location</Link>
                                                     </li>
                                                 </ul>
                                             </div>
                                             <div className="col-sm-12 col-md-3">
-                                                <h4>Address</h4>
-                                                <p>P.O. Tilwara Ghat, Near Bargi Hills, Jabalpur, Madhya Pradesh 482003</p>
-                                                <p> <span className="foot-phone">Phone: </span> <span className="foot-phone"><a href="tel: +91 8839483954">+91-8839483954</a></span> </p>
+                                                <h4 className="text-white">Address</h4>
+                                                <p className="text-white">P.O. Tilwara Ghat, Near Bargi Hills, Jabalpur, Madhya Pradesh 482003</p>
+                                                <p> <span className="foot-phone text-white">Phone: </span> <span className="foot-phone"><a href="tel: +91 8839483954" className="text-white">+91-8839483954</a></span> </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="foot-sec2">
                                     <div className="container">
-                                        <div className="row">
-                                            
+                                        <div className="row">          
                                             <div className="col-sm-12 col-md-5 foot-social">
-                                                <h4>Follow with us</h4>
-                                                <p>Join the thousands of other There are many variations of passages of Lorem Ipsum available</p>
+                                                <h4 className="text-white">Follow with us</h4>
+                                                <p className="text-white">Join the thousands of other There are many variations of passages of Lorem Ipsum available</p>
                                                 <ul>
-                                                    <li><Link to="/"><i className="fa fa-facebook" aria-hidden="true"></i></Link> </li>
-                                                    <li><Link to="/"><i className="fa fa-google-plus" aria-hidden="true"></i></Link> </li>
-                                                    <li><Link to="/"><i className="fa fa-twitter" aria-hidden="true"></i></Link> </li>
-                                                    <li><Link to="/"><i className="fa fa-linkedin" aria-hidden="true"></i></Link> </li>
-                                                    <li><Link to="/"><i className="fa fa-youtube" aria-hidden="true"></i></Link> </li>
-                                                    <li><Link to="/"><i className="fa fa-whatsapp" aria-hidden="true"></i></Link> </li>
+                                                    <li><Link to="/"><i className="text-white fa fa-facebook" aria-hidden="true"></i></Link> </li>
+                                                    <li><Link to="/"><i className="text-white fa fa-google-plus" aria-hidden="true"></i></Link> </li>
+                                                    <li><Link to="/"><i className="text-white fa fa-twitter" aria-hidden="true"></i></Link> </li>
+                                                    <li><Link to="/"><i className="text-white fa fa-linkedin" aria-hidden="true"></i></Link> </li>
+                                                    <li><Link to="/"><i className="text-white fa fa-youtube" aria-hidden="true"></i></Link> </li>
+                                                    <li><Link to="/"><i className="text-white fa fa-whatsapp" aria-hidden="true"></i></Link> </li>
                                                 </ul>
                                             </div>
                                         </div>

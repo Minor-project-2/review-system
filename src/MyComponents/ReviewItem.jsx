@@ -5,7 +5,6 @@ function ReviewItem({review}) {
   return (
     <li>
       <div className="lr-user-wr-img">
-        
         <img src="images/users/2.png" alt="" />
       </div>
       <div className="lr-user-wr-con">

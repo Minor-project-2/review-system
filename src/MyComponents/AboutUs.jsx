@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import { Link } from "react-router-dom";
 
 function AboutUs() {
     const [name, setName] = useState("");
@@ -13,11 +12,16 @@ function AboutUs() {
                 <div className="col-md-8">
                     <br /><br /><br /><br />
                     <h1>About Us</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque expedita obcaecati, quis adipisci velit voluptatum, aliquam tenetur optio deserunt ab perferendis suscipit itaque quo nisi alias enim quisquam, corporis quos!
-                    Ad dolor quam error ducimus officiis autem eum vero eaque aperiam accusantium, est numquam aut qui debitis soluta, exercitationem aliquid repellendus reprehenderit dicta unde saepe enim. Distinctio ducimus repellendus cumque?
-                    Eum ipsam aliquam voluptate id iusto corrupti tempora, nobis corporis qui earum eaque alias quod, explicabo incidunt, facilis cupiditate enim. Reprehenderit alias officia natus inventore voluptas nisi architecto ab recusandae!
-                    Fuga, voluptatum officiis? Ullam eligendi asperiores eveniet error ea nam, fuga ratione blanditiis earum natus? Ducimus soluta, minima iusto ex quas dolores, tempora enim doloremque maxime, inventore ipsam et explicabo?
-                    Nisi maiores fugiat facilis libero. Quas, dolores maiores velit laudantium nobis alias corrupti modi provident odit debitis iure, odio inventore at sequi fugit beatae praesentium atque aut sed numquam dicta?</p>
+                    <p>Online review of Restaurant is getting easier as mobile and internet technology progresses. Restaurant lovers now tend to find their favorite cuisine through online restaurant review system as it is easier and fast. QSR Web found that digital restaurant ordering is growing 300 percent faster than dine-in traffic. But most of the restaurant do not give concentration to make solid appearance on  the  internet.  </p>
+                    <p>There  are  also  some  problems  of  traditional  Restaurant review and searching of famous Restaurant location system.</p>
+                    <p>Customer lacks the copy of available menu items in restaurant. </p>
+                    <p>To solve these issues, an Online Restaurant Review System has been developed which is originally  designed for  small scale  business. But this system  is  applicable in  any restaurant. The main advantage of this online system is that it greatly simplifies the Restaurant review, feedback and online rating process for  both of the  customer and  the restaurant.
+                    </p>
+                    <p>On the other hand, social websites and media play a vital role for business. Every business can use social media to get information about potential customers, analyze sentiments and better relationship with customers. Today, a recommendation from friends via social media plays as a word of mouth in building trust while ordering online. Hence, Social media can be integrated to restaurant website  to ensure  customers about the Restaurant quality. New customers can choice their desired products by studying reviews made by other users.</p>
+                    <p>The website will also help the management to manage the online feedback, review, category, specialty of the restaurant, location and view the status. The management can add menus with the system. </p>
+                    <p>Online Website Reviews today have the power to connect the potential consumer directly with a restaurant even before he/she walks through the doors of a restaurant. Moreover, the popularity of online review websites’ have increased in recent years and thus more reviews has been created for a variety of products and services. </p>
+                    <p>Online users can read and write restaurant reviews. In order to leave a review, users must rate any restaurant 1 to 5 stars, and the number of the average rating is presented</p>
+                    <p>This Online review website displayed the restaurant aspects (e.g., Restaurant quality, service quality, and environment), and the restaurant consumers perceive the quality of a restaurant by reading these online reviews. Some scholars examine the restaurant attributes by analyzing online perspective. Additionally, the restaurant aspects are listed in the study from most frequent to the least.</p>
                 </div>
                 <div className="col-md-4">
                     <div className="visible-md visible-lg">
