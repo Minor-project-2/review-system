@@ -29,7 +29,7 @@ function Review() {
                         </div>
                     </li>
                 </ul> 
-                <Link className="waves-effect waves-light wr-re-btn" to="/" data-toggle="modal" data-target="#commend"><i className="fa fa-edit"></i> Write Review</Link> 
+                <Link className="waves-effect waves-light wr-re-btn" to="#" data-toggle="modal" data-target="#commend"><i className="fa fa-edit"></i> Write Review</Link> 
             </div>
         </div>
     );

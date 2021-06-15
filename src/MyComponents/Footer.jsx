@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-
+import ReviewForm from "./ReviewForm"
 function Footer() {
     return (
         <>
@@ -114,6 +114,7 @@ function Footer() {
                 </div>
             </section>
              <section>   
+                 <ReviewForm />
                 <div id="modal1" className="modal fade" role="dialog">
                     <div className="log-in-pop">
                         <div className="log-in-pop-left">
