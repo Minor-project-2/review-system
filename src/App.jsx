@@ -15,26 +15,6 @@ import { useState } from 'react'
 function App() {
 	const [searchQuery, setSearchQuery] = useState('')
 	const [user, setUser] = useState({})
-	const data = [
-		{
-			sno: 1,
-			title: "salted fried chicken 1",
-			desc: "Tomato soup with croutons, small ceasar salad, apple juice",
-			price: "$45"
-		},
-		{
-			sno: 2,
-			title: "salted fried chicken 2",
-			desc: "Tomato soup with croutons, small ceasar salad, apple juice",
-			price: "$45"
-		},
-		{
-			sno: 3,
-			title: "salted fried chicken 3",
-			desc: "Tomato soup with croutons, small ceasar salad, apple juice",
-			price: "$45"
-		}
-	];
 
 	return (
 		<Router>
@@ -46,7 +26,7 @@ function App() {
 				<Route exact path="/rstlist">
 					<RstList query={searchQuery} /> 
 				</Route>
-				<Route exact path="/rstdetail/:id" children={<RstDetail data={data}/> } />
+				<Route exact path="/rstdetail/:id" children={<RstDetail/> } />
 				<Route exact path="/about">
 					<AboutUs />
 				</Route>

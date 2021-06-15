@@ -1703,7 +1703,7 @@ th {
 }
 .log-in-pop-right {
     float: left;
-    width: 60%;
+    /* width: 60%; */
     padding: 50px;
 }
 .log-in-pop-right h4 {

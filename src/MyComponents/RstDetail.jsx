@@ -11,7 +11,7 @@ function RstDetail(props) {
 	const db = firebase.firestore()
 	const [restaurant, setRestaurant] = useState([])
     const [menu, setMenu] = useState([])
-    const [revies, setRevies] = useState([])
+
 
     const fetchRestaurant = async()=>{
         // fetching individual restaurant data
@@ -139,12 +139,6 @@ function RstDetail(props) {
                         </div>
                     </div>
                     <div className="col-md-4">
-                        <div className="hp-call hp-right-com">
-                            <div className="hp-call-in"> <img src="images/icon/dbc4.png" alt="" />
-                                <h3><span>Check Availability. Call us!</span> +01 4214 4214</h3> <small>We are available 24/7 Monday to Sunday</small> 
-                                <Link to="/">Call Now</Link> 
-                            </div>
-                        </div>
                         <div className="hp-book hp-right-com">
                             <div className="hp-book-in">
                                 <button className="like-button"><i className="fa fa-heart-o"></i> Bookmark this listing</button> <span>159 people bookmarked this place</span>
@@ -158,12 +152,7 @@ function RstDetail(props) {
                                 </ul>
                             </div>
                         </div>
-                        <div className="hp-card hp-right-com">
-                            <div className="hp-card-in">
-                                <h3>We Accept</h3> <span>159 people bookmarked this place</span> <img src="images/card.png" alt="" /> 
-                            </div>
-                        </div>
-                    </div>
+                       </div>
                 </div>
             </div>
         </div>
