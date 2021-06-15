@@ -19,19 +19,18 @@ function Footer() {
                                 </ul>
                             </div>
                             <div className="foot-com foot-2">
-                                <h5>Phone: (+404) 142 21 23 78</h5> 
+                                <h5><a href="tel: +91 8839483954">+91-8839483954</a></h5> 
                             </div>
                             <div className="foot-com foot-3">
                                 <Link className="waves-effect waves-light" to="/">room reservation</Link> 
                             </div>
-                            <div className="foot-com foot-4">
-                                <Link to="/"><img src="images/card.png" alt="" /></Link>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
             </section>
-            <footer className="site-footer clearfix">
+
+            <footer className="bg-footer site-footer clearfix">
                 <div className="sidebar-container">
                     <div className="sidebar-inner">
                         <div className="widget-area clearfix">
@@ -39,56 +38,48 @@ function Footer() {
                                 <div>
                                     <div className="container">
                                         <div className="row">
-                                            <div className="col-sm-12 col-md-3 foot-logo"> <img src="images/logo1.png" alt="logo" />
-                                                <p className="hasimg">Hotels worldwide incl. Infos, Ratings and Photos. Make your Hotel Reservation cheap.</p>
-                                                <p className="hasimg">The top-rated hotel booking services.</p>
+                                            <div className="col-sm-12 col-md-3 foot-logo"> <img src="images/logo3.png" alt="logo" />
+                                                <p className="hasimg">Gives the list of Restaurants, Ratings, Photo, and there Location.</p>
+                                                <p className="hasimg">The top-rated restaurants, Review.</p>
                                             </div>
                                             <div className="col-sm-12 col-md-3">
                                                 <h4>Support &amp; Help</h4>
                                                 <ul className="two-columns">
                                                     <li><Link to="/">Dashboard</Link>
                                                     </li>
-                                                    <li><Link to="/">DB Activity</Link>
-                                                    </li>
-                                                    <li><Link to="/">Booking</Link>
+                        
+                                                    <li><Link to="/">Ratings</Link>
                                                     </li>
                                                     <li><Link to="/">Contact Us</Link>
                                                     </li>
                                                     <li><Link to="/">About Us</Link>
                                                     </li>
-                                                    <li><Link to="/">Aminities</Link>
+                                                    
+                                                    <li><Link to="/">Pictures</Link>
                                                     </li>
-                                                    <li><Link to="/">Blog</Link>
-                                                    </li>
-                                                    <li><Link to="/">Food Menu</Link>
-                                                    </li>
+                                                   
                                                 </ul>
                                             </div>
                                             <div className="col-sm-12 col-md-3">
                                                 <h4>Popular Services</h4>
                                                 <ul className="two-columns">
-                                                    <li><Link to="/">Our Hotels</Link>
-                                                    </li>
+                                                    
                                                     <li><Link to="/">About Us</Link>
                                                     </li>
                                                     <li><Link to="/">Contact Us</Link>
                                                     </li>
-                                                    <li><Link to="/">Master Suite</Link>
+                                                    <li><Link to="/">Cuisine type</Link></li>
+                                                   
+                                                    <li><Link to="/">Restaurant</Link>
                                                     </li>
-                                                    <li><Link to="/">Mini-Suite</Link>
-                                                    </li>
-                                                    <li><Link to="/">Ultra Deluxe</Link>
-                                                    </li>
-                                                    <li><Link to="/">Luxury Room</Link>
-                                                    </li>
-                                                    <li><Link to="/">Normal Room</Link>
+                                                    <li><Link to="/">Location</Link>
                                                     </li>
                                                 </ul>
                                             </div>
                                             <div className="col-sm-12 col-md-3">
                                                 <h4>Address</h4>
-                                                <p>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A. Landmark : Next To Airport</p>
-                                                <p> <span className="foot-phone">Phone: </span> <span className="foot-phone">+01 1245 2541</span> </p>
+                                                <p>P.O. Tilwara Ghat, Near Bargi Hills, Jabalpur, Madhya Pradesh 482003</p>
+                                                <p> <span className="foot-phone">Phone: </span> <span className="foot-phone"><a href="tel: +91 8839483954">+91-8839483954</a></span> </p>
                                             </div>
                                         </div>
                                     </div>
@@ -96,21 +87,7 @@ function Footer() {
                                 <div className="foot-sec2">
                                     <div className="container">
                                         <div className="row">
-                                            <div className="col-sm-12 col-md-3">
-                                                <h4>Payment Options</h4>
-                                                <p className="hasimg"> <img src="images/payment.png" alt="payment"/> </p>
-                                            </div>
-                                            <div className="col-sm-12 col-md-4">
-                                                <h4>Subscribe Now</h4>
-                                                <form>
-                                                    <ul className="foot-subsc">
-                                                        <li>
-                                                            <input type="text" placeholder="Enter your email id" /> </li>
-                                                        <li>
-                                                            <input type="submit" value="submit" /> </li>
-                                                    </ul>
-                                                </form>
-                                            </div>
+                                            
                                             <div className="col-sm-12 col-md-5 foot-social">
                                                 <h4>Follow with us</h4>
                                                 <p>Join the thousands of other There are many variations of passages of Lorem Ipsum available</p>

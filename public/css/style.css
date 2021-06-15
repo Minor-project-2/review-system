@@ -246,6 +246,12 @@ th {
     color: white;
     letter-spacing: 1px;
 }
+.bg-footer{
+    background: #2a2b33;
+}
+.text-white, .hasimg{
+    color: #fff !important;
+}
 .btn-custom{
     margin-top: 15px;
     height: 35px;
