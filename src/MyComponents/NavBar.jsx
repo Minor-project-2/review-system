@@ -14,7 +14,7 @@ function NavBar({ query, setQuery, user, setUser }) {
                     <img src={user.photoURL} width="30" className="circular-img" alt="error" /> <i className="fa fa-angle-down"></i>
                 </span>
                 <ul className="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><Link to="#!">Dashboard</Link></li>
+                    <li><Link to="/dashboard">Dashboard</Link></li>
                     <li><Link to="#!" onClick={() => auth.signOut()}>Logout</Link></li>
                 </ul>
             </div>
@@ -27,7 +27,7 @@ function NavBar({ query, setQuery, user, setUser }) {
         if (status) {
             return (
                 <>
-                    <li><Link to="#!">Dashboard</Link></li>
+                    <li><Link to="/dashboard">Dashboard</Link></li>
                     <li><Link to="#!" onClick={() => auth.signOut()}>Logout</Link></li>
                 </>
             );

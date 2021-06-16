@@ -5,6 +5,7 @@ import Footer from "./MyComponents/Footer";
 import RstDetail from "./MyComponents/RstDetail";
 import RstList from "./MyComponents/RstLst";
 import AboutUs from "./MyComponents/AboutUs";
+import Dashboard from "./MyComponents/Dashboard"
 import {
   	BrowserRouter as Router,
 	Switch,
@@ -30,6 +31,7 @@ function App() {
 				<Route exact path="/about">
 					<AboutUs />
 				</Route>
+				<Route exact path="/dashboard" children={<Dashboard user={user}/>} />
 			</Switch>
 			<Footer />
 		</Router>
