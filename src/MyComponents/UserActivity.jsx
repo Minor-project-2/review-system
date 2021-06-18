@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
-
+import {db} from "../firebase"
 function UserActivity({user}) {
+  
     const [reviews, setReviews] = useState([])
 
     const fetchReview = async(user)=>{   	
@@ -30,7 +31,8 @@ function UserActivity({user}) {
 
         <ul>
           {reviews &&
-            reviews.map((review) => {
+            reviews.map((review, key=review.id) => {
+              
               return (
                 <li>
                   <div className="db-cent-wr-img">
@@ -38,7 +40,7 @@ function UserActivity({user}) {
                     <img src={user.photoURL} alt="" />
                   </div>
                   <div className="db-cent-wr-con">
-                    <h6>Hotel Booking Canceled</h6>
+                    <h6>Restaurant name</h6>
                     <span className="lr-revi-date">21th July, 2016</span>
                     <p>{review.review}</p>
                     <ul>

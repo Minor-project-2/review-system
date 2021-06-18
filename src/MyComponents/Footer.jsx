@@ -4,30 +4,7 @@ import ReviewForm from "./ReviewForm"
 function Footer() {
     return (
         <>
-            <section>
-                <div className="hom-footer-section">
-                    <div className="container">
-                        <div className="row">
-                            <div className="foot-com foot-1">
-                                <ul>
-                                    <li><Link to="/"><i className="fa fa-facebook" aria-hidden="true"></i>&nbsp;</Link>
-                                    </li>
-                                    <li><Link to="/"><i className="fa fa-google-plus" aria-hidden="true"></i>&nbsp;</Link>
-                                    </li>
-                                    <li><Link to="/"><i className="fa fa-twitter" aria-hidden="true"></i></Link>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="foot-com foot-2">
-                                <a href="tel: +91 8839483954"><h5>(+91) - 8839483954</h5></a>
-                            </div>
-                            <div className="foot-com foot-3">
-                                <Link className="waves-effect waves-light" to="/">room reservation</Link> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+          
             <footer className="bg-footer site-footer clearfix">
                 <div className="sidebar-container">
                     <div className="sidebar-inner">
@@ -104,7 +81,7 @@ function Footer() {
             </footer>
             <section className="copy">
                 <div className="container">
-                    <p>copyrights © 2017 RN53Themes.net. &nbsp;&nbsp;All rights reserved. </p>
+                    <p>copyrights ©  &nbsp;&nbsp;All rights reserved. </p>
                 </div>
             </section>
              <section>   

@@ -1775,7 +1775,7 @@ th {
     position: relative;
     overflow: hidden;
     margin-top: 72px;
-    margin-bottom: 55px;
+    /* margin-bottom: 55px; */
     background: linear-gradient(to top, #273237 14%, #f3354e 66%);
 }
 .db-left {
@@ -1785,7 +1785,7 @@ th {
 }
 .db-cent {
     float: left;
-    width: 60%;
+    width: 80%;
     background: #fff;
 }
 .db-righ {
@@ -3369,7 +3369,7 @@ footer {
     color: #a2a2a3;
     font-weight: 300;
     padding: 70px 0 70px;
-    border-top: 1px solid #f5f5f5;
+    /* border-top: 1px solid #f5f5f5; */
     background-color: #f9f9f9;
 }
 .foot-logo img {
@@ -3472,7 +3472,7 @@ footer ul li a {
 .copy {
     position: relative;
     overflow: hidden;
-    margin-bottom: 56px;
+    /* margin-bottom: 56px; */
     background: #1d2033;
 }
 .copy p {
